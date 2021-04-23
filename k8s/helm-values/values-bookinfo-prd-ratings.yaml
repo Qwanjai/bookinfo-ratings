@@ -6,6 +6,7 @@ ratings:
   imagePullSecrets: registry-bookinfo
   port: 8080
   healthCheckPath: "/health"
+  mongodbPasswordExistingSecret: bookinfo-uat-ratings-mongodb-secret
 ingress:
   host: bookinfo.opsta.net
   path: "/student120/ratings(/|$)(.*)"
