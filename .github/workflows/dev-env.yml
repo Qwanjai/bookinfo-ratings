@@ -7,9 +7,8 @@ jobs:
   build:
     runs-on: ubuntu-20.04
     steps:
-      # Don't need to checkout ('docker/build-push-action@v2' use git context to build by default)
-      # - name: Checkout code
-      #   uses: actions/checkout@v2
+      - name: Checkout code
+        uses: actions/checkout@v2
       - name: Login to GitHub Container Registry
         uses: docker/login-action@v1
         with:
